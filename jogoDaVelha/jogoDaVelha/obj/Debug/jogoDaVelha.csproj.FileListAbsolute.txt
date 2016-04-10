@@ -1,0 +1,8 @@
+C:\Unibratec\jogoDaVelha\jogoDaVelha\bin\Debug\jogoDaVelha.exe.config
+C:\Unibratec\jogoDaVelha\jogoDaVelha\bin\Debug\jogoDaVelha.exe
+C:\Unibratec\jogoDaVelha\jogoDaVelha\bin\Debug\jogoDaVelha.pdb
+C:\Unibratec\jogoDaVelha\jogoDaVelha\obj\Debug\jogoDaVelha.Form1.resources
+C:\Unibratec\jogoDaVelha\jogoDaVelha\obj\Debug\jogoDaVelha.Properties.Resources.resources
+C:\Unibratec\jogoDaVelha\jogoDaVelha\obj\Debug\jogoDaVelha.csproj.GenerateResource.Cache
+C:\Unibratec\jogoDaVelha\jogoDaVelha\obj\Debug\jogoDaVelha.exe
+C:\Unibratec\jogoDaVelha\jogoDaVelha\obj\Debug\jogoDaVelha.pdb
