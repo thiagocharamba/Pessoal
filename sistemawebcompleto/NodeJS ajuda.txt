@@ -1,0 +1,15 @@
+npm init
+
+--> Cria o diretório do projeto e as informações de configuração
+
+package.json
+
+--> Criar o nó
+
+	"dependencies": {
+		
+	}
+
+npm install
+
+--> Instala todos os pacotes que estão em dependencies
