@@ -1,0 +1,19 @@
+{
+  "name": "milkshakenode",
+  "version": "1.0.0",
+  "description": "Sistema de controle de milk shakes vendas e estoque",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago Charamba",
+  "license": "ISC",
+  "dependencies": {
+  	"connect": "*",
+  	"express": "^4.9.5",
+  	"underscore": "^1.7.0",
+  	"body-parser": "*",
+  	"mongodb": "*",
+  	"assert": "*"
+  }
+}

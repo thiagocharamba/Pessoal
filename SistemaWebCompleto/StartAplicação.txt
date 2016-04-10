@@ -1,0 +1,25 @@
+Executar no MongoDB os trechos de código abaixo para conter dados na tela inicial, caso não sejam executados a tela irá carregar até o momento de encontrar os dados no mongo.
+
+db.Pedidos.remove({});
+db.Sabores.remove({});
+
+var ListaCompras = [	{ nome: 'Thiago Charamba', shakeNome: 'Chocolate', pago: 'Sim', dataHora: '11/29/2015, 3:24:08 PM', id: 1 },
+			{ nome: 'Alexandre Ferrera', shakeNome: 'Paçoca', pago: 'Sim', dataHora: '10/29/2015, 3:24:08 PM', id: 2 },
+			{ nome: 'Amanda Holanda', shakeNome: 'Cookies', pago: 'Nao', dataHora: '10/29/2015, 3:24:08 PM', id: 3 },
+			{ nome: 'Gerardo Severiano', shakeNome: 'Mokaccino', pago: 'Sim', dataHora: '10/29/2015, 3:24:08 PM', id: 4 },
+			{ nome: 'Ramiro Gravato', shakeNome: 'Morango', pago: 'Nao', dataHora: '10/29/2015, 3:24:08 PM', id: 5 },
+			{ nome: 'Epaminondas Cidreira', shakeNome: 'Chocolate', pago: 'Nao', dataHora: '10/29/2015, 3:24:08 PM', id: 6 },
+			{ nome: 'Tobias Lage', shakeNome: 'Doce de Leite', pago: 'Sim', dataHora: '11/29/2015, 3:24:08 PM', id: 7 },
+			{ nome: 'Zeferino Villela', shakeNome: 'Maracujá', pago: 'Sim', dataHora: '11/29/2015, 3:24:08 PM', id: 8 }];
+db.Pedidos.insert(ListaCompras);
+
+var Sabores = [	{ nome: 'Chocolate', estoque: 20, saida: 2, id: 1 },
+		{ nome: 'Cookies', estoque: 12, saida: 1, id: 2 },
+		{ nome: 'Morango', estoque: 26, saida: 1, id: 3 },
+		{ nome: 'Mokaccino', estoque: 20, saida: 1, id: 4 },
+		{ nome: 'Creme', estoque: 19, saida: 0, id: 5 },
+		{ nome: 'Maracujá', estoque: 3, saida: 1, id: 6 },
+		{ nome: 'Doce de Leite', estoque: 16, saida: 1, id: 7 },
+		{ nome: 'Frutas Tropicais', estoque: 15, saida: 0, id: 8 },
+		{ nome: 'Paçoca', estoque: 6, saida: 1, id: 9 }];
+db.Sabores.insert(Sabores);

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Milk Shakes</title>
+    <script language="javascript" type="text/javascript" src="Script/angular.min.js"></script>
+    <script language="javascript" type="text/javascript" src="Script/jquery-1.8.3.min.js"></script>
+    <script language="javascript" type="text/javascript" src="Script/jsapi.js"></script>
+    <script language="javascript" type="text/javascript" src="Script/script.js"></script>
+    <link rel="shortcut icon" href="Imagens/vaca.ico" />
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div id="container-menu">
+            <img src="Imagens/vaca.png" id="logo-vaca2" />
+            <nav>
+                <img src="Imagens/logo.png" id="logo" />
+            </nav>
+            <img src="Imagens/vaca.png" id="logo-vaca" />
+        </div>
+        <div id="container-body">
+            <hr /><br />
+			<div ng-app="mainModule" ng-controller="controllerMain" ng-init="start()">
+				<div id="topo">
+					<div id="novo-div">
+						<table width="70%" cellspacing="0" cellpadding="0" align="center">
+							<tr class="linha">
+								<td colspan="2" align="center">
+									<h2>Novo Pedido</h2>
+								</td>
+							</tr>
+							<tr class="linha">
+								<td width="30%">Cliente:</td>
+								<td width="70%" align="right">
+									<input type="text" id="cliente-novo" ng-model="ListaCompra.nome" ng-keypress="limparCampoText()" required />
+								</td>
+							</tr>
+							<tr class="linha">
+								<td width="30%">Shake:</td>
+								<td width="70%" align="right">
+									<select id="shake-novo" ng-options="item as item.nome for item in Sabores | orderBy:'nome' track by item.id" ng-model="selected" required ng-change="limparCampoSelect()"></select>
+								</td>
+							</tr>
+							<tr class="linha">
+								<td width="30%">Pago:</td>
+								<td width="70%" align="center">
+									<input type="checkbox" id="checkbox-novo" ng-model="ListaCompra.pago" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="right">
+									<input type="button" id="botao-novo" value="Salvar" ng-click='salvar()' />
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="tabela-div">
+						<table width="100%" cellspacing="0" cellpadding="0" align="center">
+							<thead>
+								<tr>
+									<th>Cliente</th>
+									<th>Shake</th>
+									<th>Pago</th>
+									<th>Data / Hora</th>
+									<th>Ações</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="item in ListaCompras | orderBy:'nome'">
+									<td width="20%" align="left">{{item.nome}}</td>
+									<td width="30%" align="left">{{item.shakeNome}}</td>
+									<td width="10%" align="center">{{item.pago}}</td>
+									<td width="20%" align="center">{{item.dataHora}}</td>
+									<td width="20%" align="center">
+										<a href="#" class="excluir-acoes" id="{{item.id}}" ng-click="$parent.excluir(item)">Excluir</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<br /><br />
+				<div id="relatorios-div"> <!--ng-init="carregarGraficos()">-->
+					<table width="100%">
+						<tr>
+							<td width="30%">
+								<div id="PieChart-grafico1" class="grafico-div"></div>
+							</td>
+							<td width="20%">
+								<div id="ColumnChart-grafico2" class="grafico-div"></div>
+							</td>
+							<td width="50%">
+								<div id="ColumnChart-grafico3" class="grafico-div"></div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+            <footer>
+                <hr />
+                <h5 id="container-footer-h5" align="center">&copy; 2015 - Unibratec - Projeto de Programação para Web&nbsp;-&nbsp;<b>Thiago Charamba</b></h5>
+            </footer>
+        </div>
+    </div>
+	<div id="popUpResposta"></div>
+</body>
+</html>
