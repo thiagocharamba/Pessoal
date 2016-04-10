@@ -1,0 +1,182 @@
+﻿body {
+    font-family: arial,sans-serif;
+}
+
+#container-menu {
+    margin-top: 10px;
+}
+
+    #container-menu nav {
+        text-align: center;
+        margin-right: 161px;
+    }
+
+a {
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+}
+
+    a:hover {
+        opacity: 0.8;
+    }
+
+#logo-unibratec {
+    width: 161px;
+    height: auto;
+    float: left;
+    margin-top: 0px;
+}
+
+#logo {
+    width: 169px;
+}
+
+#logo-vaca2 {
+    width: 54px;
+    height: auto;
+    float: left;
+    margin-top: 0px;
+}
+
+#logo-vaca {
+    width: 54px;
+    height: auto;
+    float: right;
+    margin-top: -32px;
+}
+
+#container-body {
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 63px;
+}
+
+#container-footer-h5 {
+    background-color: #4285f4;
+    color: white;
+    padding: 8px 0px;
+}
+
+hr {
+    width: 99%;
+    border: solid 1px #d14836;
+}
+
+#tabela-div {
+    border-radius: 2px;
+    border: solid 1px #4285f4;
+    text-align: center;
+    height: 300px;
+    overflow: auto;
+    width: 75%;
+    float: right;
+}
+
+    #tabela-div table {
+        border: 0px;
+    }
+
+        #tabela-div table tr:nth-child(even) {
+            background: #e8eef4;
+        }
+
+        #tabela-div table tr td {
+            padding: 10px 10px;
+            color: black;
+            font-size: 12px;
+        }
+
+        #tabela-div table tr th {
+            padding: 6px 0px;
+            color: white;
+        }
+
+        #tabela-div table thead {
+            background-color: #4285f4;
+        }
+
+.editar-acoes {
+    padding: 5px 29px;
+    background-color: #4285f4;
+    font-size: 12px !important;
+}
+
+.excluir-acoes {
+    padding: 5px 27px;
+    background-color: #d14836;
+    font-size: 12px !important;
+}
+
+#novo-div {
+    border-radius: 2px;
+    border: solid 1px #4285f4;
+    float: left;
+    width: 24.5%;
+    height: 300px;
+    background-color: #d14836;
+    color: white;
+}
+
+    #novo-div h2 {
+        margin: 5px 0px;
+    }
+
+    #novo-div table {
+        margin-top: 4%;
+        height: 80%;
+    }
+
+        #novo-div table tr.linha td {
+            border-bottom: 1px solid #4285f4;
+        }
+
+#cliente-novo {
+    height: 24px;
+    width: 100%;
+    border-radius: 2px;
+    border: 0px;
+}
+
+#shake-novo {
+    height: 24px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+#checkbox-novo {
+    width: 15px;
+    height: 15px;
+}
+
+#botao-novo {
+    padding: 5px 28px;
+    background-color: #4285f4;
+    font-size: 12px !important;
+    text-decoration: none;
+    border: solid 0px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+    #botao-novo:hover {
+        opacity: 0.8;
+    }
+
+.grafico-div {
+    width: 100%;
+    height: 300px;
+}
+
+#relatorios-div {
+    margin-top: 270px;
+    border: solid 1px #4285f4;
+}
